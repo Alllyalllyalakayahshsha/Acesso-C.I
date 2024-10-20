@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Acesso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Acesso ao Sistema</h2>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" placeholder="Digite seu nome">
+    <br>
+    <label for="ci">C.I:</label>
+    <input type="text" id="ci" placeholder="Digite seu C.I">
+    <br><br>
+
+    <!-- Botões -->
+    <button id="loginBtn">Login</button>
+    <button id="consultBtn">Consultar</button>
+    <button id="forgotCIBtn">Esqueci meu C.I</button>
+    <button id="registerMemberBtn">Cadastrar Membros</button>
+    <button id="editMemberBtn">Alterar Informações</button>
+
+    <!-- Exibir dados -->
+    <pre id="personalData"></pre>
+
+    <!-- Formulário adicional para Esqueci meu C.I -->
+    <div id="forgotCIForm" style="display:none;">
+        <h3>Recuperar C.I</h3>
+        <label for="forgotName">Nome:</label>
+        <input type="text" id="forgotName" placeholder="Digite seu nome"><br>
+        <label for="forgotAge">Idade:</label>
+        <input type="text" id="forgotAge" placeholder="Digite sua idade"><br>
+        <label for="forgotFoguinho">Foguinho:</label>
+        <input type="text" id="forgotFoguinho" placeholder="Digite seu Foguinho"><br>
+        <button id="recoverCIBtn">Recuperar C.I</button>
+    </div>
+
+    <!-- Formulário adicional para Cadastrar Membros -->
+    <div id="registerMemberForm" style="display:none;">
+        <h3>Cadastrar Membro</h3>
+        <label for="registerName">Nome:</label>
+        <input type="text" id="registerName" placeholder="Digite o nome"><br>
+        <label for="registerCI">C.I:</label>
+        <input type="text" id="registerCI" placeholder="Digite o C.I"><br>
+        <label for="registerAge">Idade:</label>
+        <input type="text" id="registerAge" placeholder="Digite a idade"><br>
+        <label for="registerAmigo">Amigo:</label>
+        <input type="text" id="registerAmigo" placeholder="Digite o tipo de amigo"><br>
+        <label for="registerFoguinho">Foguinho:</label>
+        <input type="text" id="registerFoguinho" placeholder="Digite o Foguinho"><br>
+        <label for="registerStatus">Status:</label>
+        <input type="text" id="registerStatus" placeholder="Digite o status"><br>
+        <button id="confirmRegisterBtn">Cadastrar</button>
+    </div>
+
+    <!-- Formulário adicional para Alterar Informações -->
+    <div id="editMemberForm" style="display:none;">
+        <h3>Alterar Membro</h3>
+        <label for="editName">Nome:</label>
+        <input type="text" id="editName" placeholder="Digite o nome"><br>
+        <label for="editCI">C.I:</label>
+        <input type="text" id="editCI" placeholder="Digite o C.I"><br>
+        <label for="editAge">Idade:</label>
+        <input type="text" id="editAge" placeholder="Digite a idade"><br>
+        <label for="editAmigo">Amigo:</label>
+        <input type="text" id="editAmigo" placeholder="Digite o tipo de amigo"><br>
+        <label for="editFoguinho">Foguinho:</label>
+        <input type="text" id="editFoguinho" placeholder="Digite o Foguinho"><br>
+        <label for="editStatus">Status:</label>
+        <input type="text" id="editStatus" placeholder="Digite o status"><br>
+        <button id="confirmEditBtn">Alterar</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
